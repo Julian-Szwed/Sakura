@@ -325,6 +325,16 @@ header nav ul li a {
         height: 400px;
         width: 580px;
     }
+    .mas-productos {
+        grid-template-columns: 1fr, 1fr;
+        grid-auto-rows: 220px;
+        object-fit: none;
+        gap: 7px;
+    }
+    .grid-producto {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 @media screen and (max-width: 990px){
     .hero .titulo{
@@ -363,10 +373,20 @@ header nav ul li a {
         width: 385px;
     }
     .bienvenidos h3{
-        font-size: 20px;
+        font-size: 19px;
     }
     .bienvenidos div p {
-        font-size: 13px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:730px){
+    .mas-productos {
+        grid-template-columns: 1fr;
+        object-fit: cover;
+        gap: 5px;
+    }
+    .grid-producto {
+        grid-column: span 1;
     }
 }
 @media screen and (max-width: 652px){
@@ -395,6 +415,9 @@ header nav ul li a {
     }
     .bienvenidos div p {
         font-size: 20px;
+    }
+    .whatsapp a img{
+        width: 40px;
     }
 }
 @media screen and (max-width: 561px){
@@ -426,6 +449,9 @@ header nav ul li a {
     .hero a {
         font-size: 18px;
     }
+    .whatsapp a img{
+        width: 30px;
+    }
 }
 @media screen and (max-width: 407px) {
     .hero .titulo {
@@ -438,6 +464,9 @@ header nav ul li a {
         font-size: 25px;
     }
     .bienvenidos div p {
+        font-size: 18px;
+    }
+    .populares .productos div h4 {
         font-size: 18px;
     }
 }
