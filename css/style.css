@@ -82,13 +82,17 @@ header nav ul li a {
     margin-bottom: 30px;
 }
 .hero a {
-    background-color: #00000094;
+    background-color: #000000a1;
     text-decoration: none;
     color: #ffffff;
-    border: 2px solid #ff35ca;
     padding: 12px;
     font-size: 20px;
     border-radius: 25px;
+    text-transform: uppercase;
+}
+.hero a:hover {
+    background-color: #000000d7;
+    border: 1px solid #ffffff
 }
 .bienvenidos {
     display: flex;
@@ -173,6 +177,10 @@ header nav ul li a {
     padding: 8px;
     border-radius: 30px;
 }
+.populares .productos div a:hover {
+    background-color: #ff35ca;
+    color: #000;
+}
 /*! BANCO DE IMAGENES*/
 .titulo-productos h2 {
     background-image: url(../img/fondonav.jpeg);
@@ -187,7 +195,7 @@ header nav ul li a {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 10px;
-    margin-top: 15px;
+    margin: auto;
 }
 .mas-productos div img{
     width: 100%;
@@ -213,6 +221,7 @@ header nav ul li a {
     background-color: #00000085;
     color: #ffffff;
     width: 100%;
+    font-size: 20px;
 }
 /*! BOTON DE WSP */
 .whatsapp {
@@ -229,7 +238,6 @@ header nav ul li a {
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
-    border: 2px solid #ff35ca;
     text-align: center;
 }
 /*? PAGINA DE CURSOS*/
@@ -238,7 +246,6 @@ header nav ul li a {
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
-    border: 2px solid #ff35ca;
     text-align: center;
 }
 /*? PAGINA DE TIENDA*/
@@ -247,7 +254,6 @@ header nav ul li a {
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
-    border: 2px solid #ff35ca;
     text-align: center;
 }
 /*? PAGINA DE TUTORIALES*/
@@ -256,40 +262,54 @@ header nav ul li a {
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
-    border: 2px solid #ff35ca;
     text-align: center;
 }
 /*? PAGINA DE CONTACTO*/
-.formulario {
-    font-size: 20px;
-    color: #ffffff;
-    background-image: url(../img/fondonav.jpeg);
-    background-size: cover;
-    width: 25%;
-    border: 2px solid #ff35ca;
-    border-radius: 25px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
 .contacto {
     color: #ffffff;
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
-    border: 2px solid #ff35ca;
     text-align: center;
 }
-.formulario .enviar form input {
-    background-color: #000;
-    color: #ff35ca;
+form {
+    margin: auto;
+    margin-top: 25px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     border: 2px solid #ff35ca;
-    padding: 5px;
+    padding: 15px;
+    background-image: url(../img/fondonav.jpeg);
+    background-size: cover;
+    border-radius: 35px;
+}
+form .col-md-6 {
+    width: 100%;
+}
+div.col-md-6 {
+    color: #ffffff;
     text-transform: uppercase;
-    border-radius: 25px;
+}
+.form-control {
+    width: 75% !important;
+    margin: auto;
+}
+form div button{
+    background-color: #000;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ff35ca;
+    border-radius: 35px;
+    text-transform: uppercase;
+}
+form div button:hover{
+    background-color: #ff35ca;
+    color: #000;
 }
 /*? FOOTER */
 .footer {
@@ -301,7 +321,7 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    height: 100%;
+    height: 160px;
     width: 100%;
 }
 .footer h3 {
@@ -313,11 +333,8 @@ header nav ul li a {
     height: 40px;
     margin-top: 15px;
 }
-.footer div iframe {
-    border: 2px solid #ff35ca;
-    margin-top: 15px;
-    height: 300px;
-    width: 300px;
+.footer a img:hover{
+    height: 55px;
 }
 /*? MEDIA QUARIS */
 @media screen and (max-width: 1075px){
@@ -378,6 +395,9 @@ header nav ul li a {
     .bienvenidos div p {
         font-size: 12px;
     }
+    form {
+        width: 550px;
+    }
 }
 @media screen and (max-width:730px){
     .mas-productos {
@@ -419,6 +439,9 @@ header nav ul li a {
     .whatsapp a img{
         width: 40px;
     }
+    form {
+        width: 330px;
+    }
 }
 @media screen and (max-width: 561px){
     .hero .titulo {
@@ -438,6 +461,15 @@ header nav ul li a {
         border: none;
         background-color: #00000000;
     }
+    .footer h3 {
+        font-size: 25px;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    .footer a img {
+        height: 30px;
+        margin-top: 15px;
+    }
 }
 @media screen and (max-width: 450px) {
     .hero .titulo {
@@ -451,6 +483,15 @@ header nav ul li a {
     }
     .whatsapp a img{
         width: 30px;
+    }
+    .footer h3 {
+        font-size: 17px;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    .footer a img {
+        height: 25px;
+        margin-top: 15px;
     }
 }
 @media screen and (max-width: 407px) {
