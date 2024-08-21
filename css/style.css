@@ -17,35 +17,37 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header h1 {
-    font-size: 40px;
-    text-transform: uppercase;
-    background-color: #00000000;
-    border-radius: 45px;
-    padding: 5px;
-}
-header a {
+header h1 a {
     text-decoration: none;
     color: #ffffff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+header .navbar {
+    background-color: #00000000;
 }
 header nav {
     font-size: 20px;
 }
-header nav ul {
+header nav .container-fluid{
     list-style: none;
-    display: flex;
-    border: 2px solid #ff35ca;
-    border-radius: 20px;
-    padding: 5px;
-    background-color: #000;
 }
-header nav ul li {
+header nav div .navbar-brand{
+    color: #ffffff;
+}
+header nav div ul{
+    border: 2px solid #ff35ca;
+    border-radius: 30px;
+    padding: 4px;
+}
+header nav div ul li .nav-link {
+    color: #ffffff;
+    font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
 }
-header nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
+.nav-link:hover{
+    color: #ff35ca !important;
 }
 /*? MAIN-HERO */
 .hero {
@@ -264,6 +266,38 @@ header nav ul li a {
     text-transform: uppercase;
     text-align: center;
 }
+.tutos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.tutos h3 {
+    background-color: #000000c0;
+    color: #ff35ca;
+    border: 2px solid #ff35ca;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.tutos div {
+    width: 50%;
+}
+.tutos div p {
+    background-color: #000000c0;
+    color: #ffffff;
+    border: 2px solid #ff35ca;
+    border-radius: 0 0 25px 25px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.tutos img {
+    height: 100%;
+    width: 100%;
+}
 /*? PAGINA DE CONTACTO*/
 .contacto {
     color: #ffffff;
@@ -354,6 +388,33 @@ form div button:hover{
     }
 }
 @media screen and (max-width: 990px){
+    header {
+        height: 300px;
+        padding: 15px;
+    }
+    header nav div ul li .nav-link {
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+    }
+    header h1 a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    header nav div .navbar-toggler{
+        background-color: #ff35ca;
+    }
+    header nav div .collapse{
+        height: auto;
+    }
+    header nav div .navbar-brand{
+        color: #ffffff;
+    }
+    header nav div ul{
+        border: none;
+    }
     .hero .titulo{
         font-size: 35px;
     }
@@ -375,16 +436,6 @@ form div button:hover{
     }
 }
 @media screen and (max-width: 882px){
-    header {
-        flex-direction: column;
-    }
-    header h1 {
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    header nav ul li a{
-        font-size: 15px;
-    }
     .bienvenidos img{
         height: 280px;
         width: 385px;
