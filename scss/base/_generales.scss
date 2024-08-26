@@ -1,0 +1,40 @@
+/*! RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../img/background.jpeg);
+}
+/*! NAVBAR - BOOTSTRAP */
+header .navbar {
+    background-color: #00000000;
+}
+header nav .container-fluid{
+    list-style: none;
+}
+header nav div .navbar-brand{
+    color: #ffffff;
+}
+header nav div ul li .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-link:hover{
+    color: #ff35ca !important;
+}
+/*! FORMULARIO DE CONTACTO - BOOTSTRAP*/
+form .col-md-6 {
+    width: 100%;
+}
+div.col-md-6 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.form-control {
+    width: 75% !important;
+    margin: auto;
+}

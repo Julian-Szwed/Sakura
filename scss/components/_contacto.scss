@@ -1,0 +1,38 @@
+/*? PAGINA DE CONTACTO */
+.contacto{
+    color: #ffffff;
+    background-image: url(../img/fondonav.jpeg);
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    margin: auto;
+    margin-top: 25px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #ff35ca;
+    padding: 15px;
+    background-image: url(../img/fondonav.jpeg);
+    background-size: cover;
+    border-radius: 35px;
+    div{
+        button{
+            background-color: #000;
+            color: #ffffff;
+            margin-top: 10px;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ff35ca;
+            border-radius: 35px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #ff35ca;
+                color: #000;
+            }
+        }
+    }
+}
