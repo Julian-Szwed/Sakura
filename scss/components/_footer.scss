@@ -1,15 +1,17 @@
 /*! FOOTER */
 .footer{
-    background-image: url(../img/fondonav.jpeg);
-    background-size: cover;
+    background-image: linear-gradient($color-principal, $color-principal,$color-principal,$color-principal, $color-secundario,);
     text-align: center;
-    border-top: medium #ff35ca solid;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     height: 160px;
     width: 100%;
+    .logo{
+    height: 125px;
+    width: 125px;
+    }
     h3{
         font-size: 30px;
         color: #ffffff;
@@ -21,7 +23,8 @@
                 height: 40px;
                 margin-top: 15px;
                 &:hover{
-                    height: 55px;
+                    transition: 1s;
+                    transform: scale(1.5);
                 }
             }
         }

@@ -10,9 +10,8 @@
 @import "./base/media";
 header {
     height: 150px;
-    background-image: url(../img/fondonav.jpeg);
-    background-size: cover;
     padding: 30px;
+    background-image: linear-gradient($color-principal, $color-principal, $color-principal, $color-principal, $color-principal, $color-secundario);
     display: flex;
     justify-content: space-between;
     align-items: center;

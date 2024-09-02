@@ -10,6 +10,14 @@ body {
 /*! NAVBAR - BOOTSTRAP */
 header .navbar {
     background-color: #00000000;
+    flex-wrap: nowrap;
+}
+header{
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
 }
 header nav .container-fluid{
     list-style: none;
@@ -24,6 +32,7 @@ header nav div ul li .nav-link {
     margin-right: 20px;
 }
 .nav-link:hover{
+    transition: 0.5s;
     color: #ff35ca !important;
 }
 /*! FORMULARIO DE CONTACTO - BOOTSTRAP*/
