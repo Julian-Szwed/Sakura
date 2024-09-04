@@ -4,6 +4,10 @@
         height: 400px;
         width: 580px;
     }
+    .populares .productos{
+    flex-wrap: wrap;
+    height: auto;
+    }
     .mas-productos {
         grid-template-columns: 1fr, 1fr;
         grid-auto-rows: 220px;
@@ -56,11 +60,35 @@
         height: 350px;
         width: 530px;
     }
-    .bienvenidos h3{
-        font-size: 25px;
+    .bienvenidos div h3{
+        font-size: 20px;
     }
     .bienvenidos div p {
         font-size: 15px;
+    }
+    .menu .menu-tienda{
+        height: 320px;
+        width: 270px;
+    }
+    .menu .menu-tienda h3{
+        font-size: 15px;
+    }
+    .menu ul li a{
+        font-size: 10px;
+        margin-left: -20px;
+    }
+    article img {
+        height: 350px;
+    }
+    article div{
+        width: 650px;
+    }
+    article div h3{
+        font-size: 20px;
+    }
+    article div p{
+        font-size: 10px;
+        padding: 7px;
     }
 }
 @media screen and (max-width: 882px){
@@ -68,8 +96,8 @@
         height: 280px;
         width: 385px;
     }
-    .bienvenidos h3{
-        font-size: 19px;
+    .bienvenidos div h3{
+        font-size: 15px;
     }
     .bienvenidos div p {
         font-size: 12px;
@@ -77,8 +105,50 @@
     form {
         width: 550px;
     }
+    .menu .menu-tienda{
+        height: 140px;
+        width: 255px;
+    }
+    .menu .menu-tienda h3{
+        font-size: 13px;
+    }
+    .menu ul li a{
+        font-size: 9.5px;
+        margin-left: -20px;
+    }
+    article img {
+        height: 300px;
+    }
+    article div{
+        width: 600px;
+    }
+}
+@media screen and (max-width:815px){
+    article{
+        height: 350px;
+    }
+    article img {
+        height: 280px;
+    }
+    article div{
+        width: 600px;
+    }
+    article div h3{
+        margin-bottom: 30px;
+    }
+    article div a{
+        font-size: 13px;
+        padding: 7px;
+    }
+    article p{
+        display: none;
+    }
 }
 @media screen and (max-width:730px){
+    .bienvenidos img{
+        height: 250px;
+        width: 355px;
+    }
     .mas-productos {
         grid-template-columns: 1fr;
         object-fit: cover;
@@ -86,6 +156,13 @@
     }
     .grid-producto {
         grid-column: span 1;
+    }
+    .menu{
+        display: none;
+    }
+    article div a{
+        font-size: 11px;
+        padding: 6px;
     }
 }
 @media screen and (max-width: 652px){
@@ -109,7 +186,7 @@
     .bienvenidos div {
         width: 100%;
     }
-    .bienvenidos h3{
+    .bienvenidos div h3{
         font-size: 30px;
     }
     .bienvenidos div p {
@@ -120,6 +197,16 @@
     }
     form {
         width: 330px;
+    }
+    article{
+        height: 300px;
+    }
+    article div h3{
+        font-size: 15px;
+    }
+    article div a{
+        font-size: 10px;
+        width: 130px;
     }
 }
 @media screen and (max-width: 561px){
@@ -139,6 +226,16 @@
         flex-direction: column;
         border: none;
         background-color: #00000000;
+    }
+    article img{
+        height: 220px;
+    }
+    article div a{
+        font-size: 8px;
+        width: 90px;
+    }
+    article div h3{
+        font-size: 10px;
     }
     .footer h3 {
         font-size: 25px;
@@ -164,15 +261,33 @@
     .whatsapp a img{
         width: 30px;
     }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+    }
     .footer h3 {
-        font-size: 17px;
+        font-size: 15px;
         color: #ffffff;
         margin-top: 15px;
     }
-    .footer a img {
-        height: 20px;
-        width: 24px;
+    .footer .logo{
+        height: 90px;
+        width: 90px;
+    }
+    .footer div a img {
+        width: 22%;
         margin-top: 15px;
+    }
+    article img{
+        height: 200px;
+    }
+    article div a{
+        font-size: 6px;
+        width: 75px;
+    }
+    article div h3{
+        font-size: 8px;
     }
 }
 @media screen and (max-width: 407px) {
@@ -190,5 +305,18 @@
     }
     .populares .productos div h4 {
         font-size: 18px;
+    }
+    article{
+        height: 250px;
+    }
+    article img{
+        height: 150px;
+    }
+    article div a{
+        font-size: 6px;
+        width: 75px;
+    }
+    article div h3{
+        font-size: 8.5px;
     }
 }

@@ -1,3 +1,10 @@
 $color-principal: #000000;
 $color-secundario: #ff35ca;
 $color-terciario: #ffffff;
+
+//! Boton
+$boton:(
+    bg-color: #000000,
+    borde-boton: 2px solid #ff35ca,
+    text-color: #ffffff
+)

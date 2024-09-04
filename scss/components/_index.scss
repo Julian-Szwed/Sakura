@@ -1,6 +1,5 @@
 /*! MAIN-HERO */
 .hero {
-    border-bottom: medium $color-secundario solid;
     width: 100%;
     height: 500px;
     background-image: url(../img/fondohero2.jpg);
@@ -64,6 +63,7 @@
     align-items: center;
     margin: 20px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 
     div {
         width: 35%;
@@ -79,21 +79,27 @@
         }
 
         p {
-            background-image: url(../img/fondonav.jpeg);
-            background-size: cover;
+            background-color: $color-principal;
             color: $color-terciario;
             border: 2px solid $color-secundario;
             border-radius: 0 0 25px 25px;
             font-size: 20px;
             text-align: center;
             padding: 10px;
+            text-transform: uppercase;
+            a{
+                text-decoration: underline;
+                list-style: none;
+                color: $color-secundario;
+            }
         }
     }
 
     img {
         height: 450px;
         width: 700px;
-        border: 2px solid $color-secundario;
+        -webkit-box-shadow: 2px -1px 15px 10px #ff35ca;
+        box-shadow: 2px -1px 15px 10px #ff35ca;
     }
 }
 
@@ -148,11 +154,11 @@
             }
 
             a {
-                border: 2px solid $color-secundario;
-                color: $color-terciario;
+                background-color: map-get($boton, bg-color);
+                color: map-get($boton, text-color);
+                border: map-get($boton, borde-boton);
                 font-size: 18px;
                 text-decoration: none;
-                background-color: $color-principal;
                 padding: 7px;
                 border-radius: 10px;
 
