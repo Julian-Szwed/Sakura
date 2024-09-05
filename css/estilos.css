@@ -586,7 +586,13 @@ article {
   article img {
     height: 300px; }
   article div {
-    width: 600px; } }
+    width: 600px; }
+  /*!mediaQ Cursos*/
+  .compra-cursos {
+    flex-wrap: wrap; }
+  /*!mediaQ Blog*/
+  .guias {
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 815px) {
   article {
@@ -708,7 +714,17 @@ article {
     font-size: 6px;
     width: 75px; }
   article div h3 {
-    font-size: 8px; } }
+    font-size: 8px; }
+  /*mediaQ Cursos*/
+  .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
+    font-size: 17px; }
+  .compra-cursos .cursos-pagos .cursos-pagos-guias p {
+    font-size: 14px; }
+  /*!mediaQ Blog*/
+  .guias .guias-descargables .tutos h3 {
+    font-size: 17px; }
+  .guias .guias-descargables .tutos p {
+    font-size: 11px; } }
 
 @media screen and (max-width: 407px) {
   .hero .titulo {
@@ -729,7 +745,9 @@ article {
     font-size: 6px;
     width: 75px; }
   article div h3 {
-    font-size: 8.5px; } }
+    font-size: 8.5px; }
+  .compra-cursos .cursos-pagos .cursos-pagos-guias p {
+    font-size: 12px; } }
 
 header {
   height: 150px;
