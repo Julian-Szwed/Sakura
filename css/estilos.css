@@ -1,3 +1,6 @@
+.populares .productos div a, article div a {
+  text-decoration: none; }
+
 /*! RESET */
 * {
   margin: 0;
@@ -53,8 +56,8 @@ div.col-md-6 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center; }
   .hero .titulo {
@@ -171,7 +174,6 @@ div.col-md-6 {
       color: #ffffff;
       border: 2px solid #ff35ca;
       font-size: 18px;
-      text-decoration: none;
       padding: 7px;
       border-radius: 10px; }
       .populares .productos div a:hover {
@@ -225,6 +227,50 @@ div.col-md-6 {
   text-transform: uppercase;
   text-align: center; }
 
+.guias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .guias .guias-descargables {
+    background-color: #ffffff;
+    border: 2px solid #ff35ca;
+    border-radius: 5px;
+    width: 380px;
+    height: 600px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; }
+    .guias .guias-descargables img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover; }
+    .guias .guias-descargables .tutos {
+      padding: 2px;
+      flex-grow: 1;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .guias .guias-descargables .tutos h3 {
+        font-size: 22px;
+        padding: 5px;
+        margin-top: -5px; }
+      .guias .guias-descargables .tutos p {
+        font-size: 13px; }
+      .guias .guias-descargables .tutos .boton-tutos {
+        background-color: #ff35ca;
+        color: #ffffff;
+        border: 2px solid #ff35ca;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px; }
+        .guias .guias-descargables .tutos .boton-tutos:hover {
+          background-color: #000000;
+          color: #ff35ca;
+          transition: 0.5s; }
+
 /*? PAGINA DE CONTACTO */
 .contacto {
   color: #ffffff;
@@ -266,6 +312,50 @@ form {
   margin-top: 5px;
   text-transform: uppercase;
   text-align: center; }
+
+.compra-cursos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .compra-cursos .cursos-pagos {
+    background-color: #000000;
+    border: 2px solid #ff35ca;
+    border-radius: 5px;
+    width: 380px;
+    height: 600px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #ffffff; }
+    .compra-cursos .cursos-pagos img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover; }
+    .compra-cursos .cursos-pagos .cursos-pagos-guias {
+      padding: 2px;
+      flex-grow: 1;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
+        font-size: 22px;
+        padding: 5px; }
+      .compra-cursos .cursos-pagos .cursos-pagos-guias p {
+        font-size: 14.5px; }
+      .compra-cursos .cursos-pagos .cursos-pagos-guias .boton-cursos {
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #ff35ca;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px; }
+        .compra-cursos .cursos-pagos .cursos-pagos-guias .boton-cursos:hover {
+          background-color: #ff35ca;
+          color: #000000;
+          transition: 0.5s; }
 
 /*? PAGINA DE TIENDA */
 .tienda {
@@ -332,7 +422,6 @@ article {
       border: 2px solid #000000;
       color: #ffffff;
       font-size: 18px;
-      text-decoration: none;
       background-color: #000000;
       padding: 7px;
       border-radius: 10px;

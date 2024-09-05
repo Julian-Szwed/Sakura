@@ -2,6 +2,21 @@ $color-principal: #000000;
 $color-secundario: #ff35ca;
 $color-terciario: #ffffff;
 
+@mixin flex($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+@mixin bordes($pixel, $tipo, $color){
+    border-radius: $pixel;
+    border-style: $tipo;
+    border-color: $color;
+}
+
+%links {
+    text-decoration: none;
+}
+
 //! Boton
 $boton:(
     bg-color: #000000,
