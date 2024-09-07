@@ -1,40 +1,76 @@
 /*? PAGINA DE TUTORIALES */
-.tutoriales{
+.bio{
     color: #ffffff;
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
     text-align: center;
 }
-.tutos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    flex-wrap: wrap;
+
+
+.biografia{
+    height: 500px;
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    background-color: #0000006e;
     div{
-        width: 50%;
+        height: 100%;
+        width: 100%;
+        margin: 50px;
         h3{
-            background-color: #000000c0;
-            color: #ff35ca;
-            border: 2px solid #ff35ca;
-            border-radius: 25px 25px 0 0;
-            text-align: center;
+            color: $color-terciario;
+            margin: 40px;
+            font-size: 35px;
             text-transform: uppercase;
-            font-size: 30px;
+            text-align: center;
         }
         p{
-            background-color: #000000c0;
-            color: #ffffff;
-            border: 2px solid #ff35ca;
-            border-radius: 0 0 25px 25px;
-            font-size: 20px;
+            color: $color-terciario;
+            font-size: 18px;
             text-align: center;
-            padding: 10px;
-            img{
-                height: 100%;
-                width: 100%;
-            }
         }
+    }
+    img{
+        height: 400px;
+        width: auto;
+        margin: 50px;
+        @include bordes (2px, solid, $color-secundario);
+    }
+}
+.familia{
+    height: 450px;
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    background-color: #0000006e;
+    .flia{
+        height: 100%;
+        width: 100%;
+        .flia-titulo{
+            color: $color-terciario;
+            text-transform: uppercase;
+            margin: 40px;
+            font-size: 35px;
+            text-align: center;
+        }
+        .flia-parrafo{
+            color: $color-terciario;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .flia-img{
+        height: 400px;
+        width: auto;
+        margin: 20px;
+        @include bordes (2px, solid, $color-secundario);
     }
 }

@@ -22,24 +22,24 @@ header nav .container-fluid{
     list-style: none;
 }
 header nav div .navbar-brand{
-    color: #ffffff;
+    color: $color-terciario;
 }
 header nav div ul li .nav-link {
-    color: #ffffff;
+    color: $color-terciario;
     font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
 }
 .nav-link:hover{
     transition: 0.5s;
-    color: #ff35ca !important;
+    color: $color-secundario !important;
 }
 /*! FORMULARIO DE CONTACTO - BOOTSTRAP*/
 form .col-md-6 {
     width: 100%;
 }
 div.col-md-6 {
-    color: #ffffff;
+    color: $color-terciario;
     text-transform: uppercase;
 }
 .form-control {

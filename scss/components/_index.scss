@@ -162,7 +162,29 @@
         }
     }
 }
-
+/* PAGES */
+/*.pages{
+    @include flex(flex, space-around, center);
+    padding: 5px;
+    margin-top: 50px;
+    div{
+        height: 500px;
+        width: 1000px;
+        padding: 5px;
+        position: relative;
+        img{
+            height: 60%;
+            width: 100%;
+        }
+        h4{
+            background-color: $color-principal;
+            color: $color-secundario;
+            text-align: center;
+            transition-property: width;
+            transition-duration: 4s;
+        }
+    }
+}*/
 /*! BANCO DE IMAGENES */
 .titulo-productos {
     h2 {

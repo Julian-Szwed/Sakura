@@ -180,6 +180,29 @@ div.col-md-6 {
         background-color: #ff35ca;
         color: #000000; }
 
+/* PAGES */
+/*.pages{
+    @include flex(flex, space-around, center);
+    padding: 5px;
+    margin-top: 50px;
+    div{
+        height: 500px;
+        width: 1000px;
+        padding: 5px;
+        position: relative;
+        img{
+            height: 60%;
+            width: 100%;
+        }
+        h4{
+            background-color: $color-principal;
+            color: $color-secundario;
+            text-align: center;
+            transition-property: width;
+            transition-duration: 4s;
+        }
+    }
+}*/
 /*! BANCO DE IMAGENES */
 .titulo-productos h2 {
   background-image: url(../img/fondonav.jpeg);
@@ -437,40 +460,74 @@ article {
     width: 500px; }
 
 /*? PAGINA DE TUTORIALES */
-.tutoriales {
+.bio {
   color: #ffffff;
   background-image: url(../img/fondonav.jpeg);
   margin-top: 5px;
   text-transform: uppercase;
   text-align: center; }
 
-.tutos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 20px;
-  flex-wrap: wrap; }
-  .tutos div {
-    width: 50%; }
-    .tutos div h3 {
-      background-color: #000000c0;
-      color: #ff35ca;
-      border: 2px solid #ff35ca;
-      border-radius: 25px 25px 0 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 30px; }
-    .tutos div p {
-      background-color: #000000c0;
+.biografia {
+  height: 500px;
+  width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+  background-color: #0000006e; }
+  .biografia div {
+    height: 100%;
+    width: 100%;
+    margin: 50px; }
+    .biografia div h3 {
       color: #ffffff;
-      border: 2px solid #ff35ca;
-      border-radius: 0 0 25px 25px;
-      font-size: 20px;
-      text-align: center;
-      padding: 10px; }
-      .tutos div p img {
-        height: 100%;
-        width: 100%; }
+      margin: 40px;
+      font-size: 35px;
+      text-transform: uppercase;
+      text-align: center; }
+    .biografia div p {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center; }
+  .biografia img {
+    height: 400px;
+    width: auto;
+    margin: 50px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #ff35ca; }
+
+.familia {
+  height: 450px;
+  width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  background-color: #0000006e; }
+  .familia .flia {
+    height: 100%;
+    width: 100%; }
+    .familia .flia .flia-titulo {
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 40px;
+      font-size: 35px;
+      text-align: center; }
+    .familia .flia .flia-parrafo {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center; }
+  .familia .flia-img {
+    height: 400px;
+    width: auto;
+    margin: 20px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #ff35ca; }
 
 /*! FOOTER */
 .footer {
