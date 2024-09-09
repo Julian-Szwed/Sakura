@@ -6,6 +6,30 @@
     text-transform: uppercase;
     text-align: center;
 }
+.info-tutos-guias{
+    height: 250px;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #000000;
+    text-align: center;
+    @include bordes(2px, solid, $color-secundario);
+    .tutos-guias{
+
+        .tutos-guias-titulo{
+            color: $color-terciario;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        .tutos-guias-parrafo{
+            color: $color-secundario;
+            padding: 10px;
+        }
+
+    }
+
+}
 .guias{
     display: flex;
     justify-content: space-between;

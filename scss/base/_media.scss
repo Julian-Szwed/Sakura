@@ -1,347 +1,656 @@
 /*? MEDIA QUARIS */
-@media screen and (max-width: 1075px){
+@media screen and (max-width: 1075px) {
     .bienvenidos img {
         height: 400px;
         width: 580px;
     }
-    .populares .productos{
-    flex-wrap: wrap;
-    height: auto;
+
+    .populares .productos {
+        flex-wrap: wrap;
+        height: auto;
     }
+
     .mas-productos {
         grid-template-columns: 1fr, 1fr;
         grid-auto-rows: 220px;
         object-fit: none;
         gap: 7px;
     }
+
     .grid-producto {
         grid-column: span 1;
         grid-row: span 1;
     }
 }
-@media screen and (max-width: 990px){
+
+@media screen and (max-width: 990px) {
     header {
         height: 300px;
         padding: 15px;
     }
+
     header nav div ul li .nav-link {
         color: #ffffff;
         font-size: 13px;
         text-align: center;
     }
+
     header h1 a {
         text-decoration: none;
         color: #ffffff;
         text-transform: uppercase;
         font-size: 40px;
     }
-    header nav div .navbar-toggler{
+
+    header nav div .navbar-toggler {
         background-color: #ff35ca;
     }
-    header nav div .collapse{
+
+    header nav div .collapse {
         height: 30px;
     }
-    header nav div .navbar-brand{
+
+    header nav div .navbar-brand {
         color: #ffffff;
     }
-    header nav div ul{
+
+    header nav div ul {
         border: none;
     }
-    .hero .titulo{
+
+    .hero .titulo {
         font-size: 35px;
     }
-    .hero p{
+
+    .hero p {
         font-size: 20px;
     }
+
     .hero a {
         font-size: 15px;
     }
-    .bienvenidos img{
+
+    .bienvenidos img {
         height: 350px;
         width: 530px;
     }
-    .bienvenidos div h3{
+
+    .bienvenidos div h3 {
         font-size: 20px;
     }
+
     .bienvenidos div p {
         font-size: 15px;
     }
-    .menu .menu-tienda{
+
+    .menu .menu-tienda {
         height: 320px;
         width: 270px;
     }
-    .menu .menu-tienda h3{
+
+    .menu .menu-tienda h3 {
         font-size: 15px;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 10px;
         margin-left: -20px;
     }
+
     article img {
         height: 350px;
     }
-    article div{
+
+    article div {
         width: 650px;
     }
-    article div h3{
+
+    article div h3 {
         font-size: 20px;
     }
-    article div p{
+
+    article div p {
         font-size: 10px;
         padding: 7px;
     }
+
+    /*MEDIAQ BIO*/
+    .biografia {
+        height: 400px;
+        width: 750px;
+    }
+
+    .biografia div h3 {
+        font-size: 25px;
+        margin: 25px;
+    }
+
+    .biografia div p {
+        font-size: 15px;
+    }
+
+    .biografia img {
+        height: 300px;
+        width: auto;
+    }
+
+    .biografia .hobbies {
+        height: 200px;
+        width: auto;
+    }
+
+    .familia {
+        height: 350px;
+        width: 750px;
+    }
+
+    .familia .flia .flia-titulo {
+        font-size: 25px;
+        margin: 25px;
+    }
+
+    .familia .flia .flia-parrafo {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    .familia .flia-img {
+        height: 300px;
+    }
+    /*MEDIAQ BLOG*/
+    .info-tutos-guias{
+        height: 200px;
+        width: 500px;
+    }
+    .info-tutos-guias .tutos-guias .tutos-guias-titulo{
+        font-size: 25px;
+        padding: 2px;
+    }
+    .info-tutos-guias .tutos-guias .tutos-guias-parrafo{
+        font-size: 12px;
+        padding: 5px;
+    }
 }
-@media screen and (max-width: 882px){
-    .bienvenidos img{
+
+@media screen and (max-width: 882px) {
+    .bienvenidos img {
         height: 280px;
         width: 385px;
     }
-    .bienvenidos div h3{
+
+    .bienvenidos div h3 {
         font-size: 15px;
     }
+
     .bienvenidos div p {
         font-size: 12px;
     }
+
     form {
         width: 550px;
     }
-    .menu .menu-tienda{
+
+    .menu .menu-tienda {
         height: 140px;
         width: 255px;
     }
-    .menu .menu-tienda h3{
+
+    .menu .menu-tienda h3 {
         font-size: 13px;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 9.5px;
         margin-left: -20px;
     }
+
     article img {
         height: 300px;
     }
-    article div{
+
+    article div {
         width: 600px;
     }
+
     /*!mediaQ Cursos*/
-    .compra-cursos{
+    .compra-cursos {
         flex-wrap: wrap;
     }
+
     /*!mediaQ Blog*/
-    .guias{
+    .guias {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width:815px){
-    article{
+
+@media screen and (max-width:815px) {
+    article {
         height: 350px;
     }
+
     article img {
         height: 280px;
     }
-    article div{
+
+    article div {
         width: 600px;
     }
-    article div h3{
+
+    article div h3 {
         margin-bottom: 30px;
     }
-    article div a{
+
+    article div a {
         font-size: 13px;
         padding: 7px;
     }
-    article p{
+
+    article p {
         display: none;
     }
+
+    /*MEDIAQ BIO*/
+    .biografia {
+        height: 300px;
+        width: 500px;
+    }
+
+    .biografia div h3 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .biografia div p {
+        font-size: 12px;
+    }
+
+    .biografia img {
+        height: 200px;
+        width: auto;
+    }
+
+    .familia {
+        height: 300px;
+        width: 500px;
+    }
+
+    .familia .flia .flia-titulo {
+        font-size: 20px;
+    }
+
+    .familia .flia .flia-parrafo {
+        font-size: 12px;
+    }
+
+    .familia .flia-img {
+        height: 240px;
+        width: 250px;
+    }
 }
-@media screen and (max-width:730px){
-    .bienvenidos img{
+
+@media screen and (max-width:730px) {
+    .bienvenidos img {
         height: 250px;
         width: 355px;
     }
+
     .mas-productos {
         grid-template-columns: 1fr;
         object-fit: cover;
         gap: 5px;
     }
+
     .grid-producto {
         grid-column: span 1;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
-    article div a{
+
+    article div a {
         font-size: 11px;
         padding: 6px;
     }
 }
-@media screen and (max-width: 652px){
+
+@media screen and (max-width: 652px) {
     .hero {
         height: 300px;
     }
-    .hero .titulo{
+
+    .hero .titulo {
         font-size: 30px;
         margin: 15px;
     }
-    .hero p{
+
+    .hero p {
         font-size: 17px;
         margin: 10px;
     }
+
     .hero a {
         font-size: 13px;
     }
-    .bienvenidos img{
+
+    .bienvenidos img {
         display: none;
     }
+
     .bienvenidos div {
         width: 100%;
     }
-    .bienvenidos div h3{
+
+    .bienvenidos div h3 {
         font-size: 30px;
     }
+
     .bienvenidos div p {
         font-size: 20px;
     }
-    .whatsapp a img{
+
+    .whatsapp a img {
         width: 40px;
     }
+
     form {
         width: 330px;
     }
-    article{
+
+    article {
         height: 300px;
     }
-    article div h3{
+
+    article div h3 {
         font-size: 15px;
     }
-    article div a{
+
+    article div a {
         font-size: 10px;
         width: 130px;
     }
+
+    /*MEDIAQ BIO*/
+    .biografia {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        width: 500px;
+        gap: 20px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .biografia div h3 {
+        font-size: 20px;
+        margin: 10px;
+        margin-right: 65px;
+    }
+
+    .biografia div p {
+        font-size: 12px;
+        text-align: center;
+        margin-right: 65px;
+    }
+
+    .biografia img {
+        height: 400px;
+        width: auto;
+        margin: auto;
+        margin-top: -50px;
+        margin-bottom: 40px;
+    }
+
+    .biografia .hobbies {
+        height: 400px;
+        width: auto;
+        margin: auto;
+        margin-top: -50px;
+        margin-bottom: 40px;
+    }
+
+    .familia {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        width: 500px;
+        gap: 20px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .familia .flia .flia-titulo {
+        font-size: 20px;
+        margin: 10px;
+
+    }
+
+    .familia .flia .flia-parrafo {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .familia .flia-img {
+        height: 400px;
+        width: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
 }
-@media screen and (max-width: 561px){
+
+@media screen and (max-width: 561px) {
     .hero .titulo {
         font-size: 25px;
     }
+
     .hero p {
         font-size: 15px;
     }
+
     .hero a {
         font-size: 11px;
     }
+
     header {
         height: 285px;
     }
+
     header nav ul {
         flex-direction: column;
         border: none;
         background-color: #00000000;
     }
-    article img{
+
+    article img {
         height: 220px;
     }
-    article div a{
+
+    article div a {
         font-size: 8px;
         width: 90px;
     }
-    article div h3{
+
+    article div h3 {
         font-size: 10px;
     }
+
     .footer h3 {
         font-size: 25px;
         color: #ffffff;
         margin-top: 15px;
     }
+
     .footer a img {
         height: 20px;
         width: 33px;
         margin-top: 15px;
     }
+
+    /*MEDIAQ BIO*/
+    .biografia {
+        width: 350px;
+    }
+
+    .familia {
+        width: 350px;
+    }
+
+    .familia .flia-img {
+        height: 250px;
+    }
 }
+    /*MEDIAQ BLOG*/
+    .info-tutos-guias{
+        height: 180px;
+        width: 340px;
+    }
+    .info-tutos-guias .tutos-guias .tutos-guias-titulo{
+        font-size: 18px;
+        padding: none;
+    }
+    .info-tutos-guias .tutos-guias .tutos-guias-parrafo{
+        font-size: 10px;
+        padding: none;
+    }
+
 @media screen and (max-width: 450px) {
     .hero .titulo {
         font-size: 25px;
     }
+
     .hero p {
         display: none;
     }
+
     .hero a {
         font-size: 18px;
     }
-    .whatsapp a img{
+
+    .whatsapp a img {
         width: 30px;
     }
-    .footer{
+
+    .footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
     }
+
     .footer h3 {
         font-size: 15px;
         color: #ffffff;
         margin-top: 15px;
     }
-    .footer .logo{
+
+    .footer .logo {
         height: 90px;
         width: 90px;
     }
+
     .footer div a img {
         width: 22%;
         margin-top: 15px;
     }
-    article img{
+
+    article img {
         height: 200px;
     }
-    article div a{
+
+    article div a {
         font-size: 6px;
         width: 75px;
     }
-    article div h3{
+
+    article div h3 {
         font-size: 8px;
     }
+
     /*mediaQ Cursos*/
-    .compra-cursos .cursos-pagos .cursos-pagos-guias h3{
+    .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
         font-size: 17px;
     }
-    .compra-cursos .cursos-pagos .cursos-pagos-guias p{
+
+    .compra-cursos .cursos-pagos .cursos-pagos-guias p {
         font-size: 14px;
     }
+
     /*!mediaQ Blog*/
-    .guias .guias-descargables .tutos h3{
+    .guias .guias-descargables .tutos h3 {
         font-size: 17px;
     }
-    .guias .guias-descargables .tutos p{
+
+    .guias .guias-descargables .tutos p {
         font-size: 11px;
     }
 }
+
 @media screen and (max-width: 407px) {
     .hero .titulo {
         font-size: 20px;
     }
+
     .hero a {
         font-size: 15px;
     }
-    .bienvenidos h3{
+
+    .bienvenidos h3 {
         font-size: 25px;
     }
+
     .bienvenidos div p {
         font-size: 18px;
     }
+
     .populares .productos div h4 {
         font-size: 18px;
     }
-    article{
+
+    article {
         height: 250px;
     }
-    article img{
+
+    article img {
         height: 150px;
     }
-    article div a{
+
+    article div a {
         font-size: 6px;
         width: 75px;
     }
-    article div h3{
+
+    article div h3 {
         font-size: 8.5px;
     }
-    .compra-cursos .cursos-pagos .cursos-pagos-guias p{
+
+    .compra-cursos .cursos-pagos .cursos-pagos-guias p {
         font-size: 12px;
+    }
+
+    /*MEDIAQ BIO*/
+    .biografia {
+        width: 270px;
+    }
+
+    .biografia img {
+        height: 220px;
+    }
+
+    .biografia div h3 {
+        font-size: 13px;
+        margin-left: -5px;
+    }
+
+    .biografia div p {
+        margin-left: -5px;
+    }
+
+    .biografia .hobbies {
+        height: 250px;
+    }
+
+    .familia {
+        width: 270px;
+    }
+
+    .familia .flia-img {
+        height: 220px;
     }
 }
