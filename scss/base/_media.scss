@@ -24,40 +24,10 @@
 }
 
 @media screen and (max-width: 990px) {
-    header {
-        height: 300px;
-        padding: 15px;
-    }
-
-    header nav div ul li .nav-link {
-        color: #ffffff;
-        font-size: 13px;
-        text-align: center;
-    }
-
-    header h1 a {
-        text-decoration: none;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 40px;
-    }
-
-    header nav div .navbar-toggler {
-        background-color: #ff35ca;
-    }
-
-    header nav div .collapse {
-        height: 30px;
-    }
-
-    header nav div .navbar-brand {
-        color: #ffffff;
-    }
-
-    header nav div ul {
-        border: none;
-    }
-
+    .navbar .logo{
+        height: 75px;
+        width: 75px;
+        }
     .hero .titulo {
         font-size: 35px;
     }
@@ -449,16 +419,6 @@
         font-size: 11px;
     }
 
-    header {
-        height: 285px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        border: none;
-        background-color: #00000000;
-    }
-
     article img {
         height: 220px;
     }
@@ -496,7 +456,6 @@
     .familia .flia-img {
         height: 250px;
     }
-}
     /*MEDIAQ BLOG*/
     .info-tutos-guias{
         height: 180px;
@@ -510,6 +469,7 @@
         font-size: 10px;
         padding: none;
     }
+}
 
 @media screen and (max-width: 450px) {
     .hero .titulo {

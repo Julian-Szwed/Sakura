@@ -4,44 +4,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(../img/background.jpeg);
 }
+
 /*! NAVBAR - BOOTSTRAP */
-header .navbar {
-    background-color: #00000000;
-    flex-wrap: nowrap;
+.navbar {
+    background-image: linear-gradient($color-principal, $color-principal, $color-principal, $color-principal, $color-secundario);
 }
-header{
-    img{
-        height: 100px;
-        width: 100px;
+
+.navbar .logo {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+}
+.navbar .container-fluid .navbar-toggler{
+    background-color: $color-secundario;
+    @include bordes(2px, solid, $color-principal);
+    border-radius: 10px;
+}
+.navbar .container-fluid .collapse .navbar-nav {
+    padding: 2px;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-link {
+    color: $color-terciario;
+    font-size: 20px;
+    margin: 5px;
+
+    &:hover {
+        color: $color-secundario;
+        transition: 0.5s;
+
     }
 }
-header nav .container-fluid{
-    list-style: none;
-}
-header nav div .navbar-brand{
-    color: $color-terciario;
-}
-header nav div ul li .nav-link {
-    color: $color-terciario;
-    font-size: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.nav-link:hover{
-    transition: 0.5s;
-    color: $color-secundario !important;
-}
+
 /*! FORMULARIO DE CONTACTO - BOOTSTRAP*/
 form .col-md-6 {
     width: 100%;
 }
+
 div.col-md-6 {
     color: $color-terciario;
     text-transform: uppercase;
 }
+
 .form-control {
     width: 75% !important;
     margin: auto;

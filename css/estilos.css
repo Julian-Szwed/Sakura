@@ -11,29 +11,31 @@ body {
   background-image: url(../img/background.jpeg); }
 
 /*! NAVBAR - BOOTSTRAP */
-header .navbar {
-  background-color: #00000000;
-  flex-wrap: nowrap; }
+.navbar {
+  background-image: linear-gradient(#000000, #000000, #000000, #000000, #ff35ca); }
 
-header img {
+.navbar .logo {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  margin: 30px; }
 
-header nav .container-fluid {
-  list-style: none; }
+.navbar .container-fluid .navbar-toggler {
+  background-color: #ff35ca;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px; }
 
-header nav div .navbar-brand {
-  color: #ffffff; }
+.navbar .container-fluid .collapse .navbar-nav {
+  padding: 2px; }
 
-header nav div ul li .nav-link {
+.navbar .container-fluid .collapse .navbar-nav .nav-link {
   color: #ffffff;
-  font-size: 18px;
-  margin-left: 20px;
-  margin-right: 20px; }
-
-.nav-link:hover {
-  transition: 0.5s;
-  color: #ff35ca !important; }
+  font-size: 20px;
+  margin: 5px; }
+  .navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
+    color: #ff35ca;
+    transition: 0.5s; }
 
 /*! FORMULARIO DE CONTACTO - BOOTSTRAP*/
 form .col-md-6 {
@@ -61,26 +63,23 @@ div.col-md-6 {
   justify-content: center;
   align-items: center; }
   .hero .titulo {
-    background-color: #0000008c;
     text-align: center;
-    font-size: 40px;
-    color: #ffffff;
+    font-size: 45px;
+    color: #ff35ca;
     margin: 25px;
     display: inline-block;
+    text-shadow: #000000 0 3px;
     text-transform: uppercase; }
-    .hero .titulo:hover {
-      background-color: #000000d2; }
   .hero p {
-    font-size: 25px;
+    font-size: 35px;
     width: 50%;
     text-align: center;
-    color: #ffffff;
-    background-color: #0000008c;
+    color: #ff35ca;
     text-decoration: none;
     margin: 25px;
-    margin-bottom: 30px; }
-    .hero p:hover {
-      background-color: #000000d2; }
+    margin-bottom: 30px;
+    text-shadow: #000000 0 3px;
+    text-transform: uppercase; }
   .hero a {
     background-color: #000000a1;
     text-decoration: none;
@@ -126,8 +125,9 @@ div.col-md-6 {
   .bienvenidos img {
     height: 450px;
     width: 700px;
-    -webkit-box-shadow: 2px -1px 15px 10px #ff35ca;
-    box-shadow: 2px -1px 15px 10px #ff35ca; }
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #000000; }
 
 /*! TARJETAS - PRODUCTOS */
 .populares h3 {
@@ -592,26 +592,9 @@ article {
     grid-row: span 1; } }
 
 @media screen and (max-width: 990px) {
-  header {
-    height: 300px;
-    padding: 15px; }
-  header nav div ul li .nav-link {
-    color: #ffffff;
-    font-size: 13px;
-    text-align: center; }
-  header h1 a {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 40px; }
-  header nav div .navbar-toggler {
-    background-color: #ff35ca; }
-  header nav div .collapse {
-    height: 30px; }
-  header nav div .navbar-brand {
-    color: #ffffff; }
-  header nav div ul {
-    border: none; }
+  .navbar .logo {
+    height: 75px;
+    width: 75px; }
   .hero .titulo {
     font-size: 35px; }
   .hero p {
@@ -845,12 +828,6 @@ article {
     font-size: 15px; }
   .hero a {
     font-size: 11px; }
-  header {
-    height: 285px; }
-  header nav ul {
-    flex-direction: column;
-    border: none;
-    background-color: #00000000; }
   article img {
     height: 220px; }
   article div a {
@@ -872,20 +849,17 @@ article {
   .familia {
     width: 350px; }
   .familia .flia-img {
-    height: 250px; } }
-
-/*MEDIAQ BLOG*/
-.info-tutos-guias {
-  height: 180px;
-  width: 340px; }
-
-.info-tutos-guias .tutos-guias .tutos-guias-titulo {
-  font-size: 18px;
-  padding: none; }
-
-.info-tutos-guias .tutos-guias .tutos-guias-parrafo {
-  font-size: 10px;
-  padding: none; }
+    height: 250px; }
+  /*MEDIAQ BLOG*/
+  .info-tutos-guias {
+    height: 180px;
+    width: 340px; }
+  .info-tutos-guias .tutos-guias .tutos-guias-titulo {
+    font-size: 18px;
+    padding: none; }
+  .info-tutos-guias .tutos-guias .tutos-guias-parrafo {
+    font-size: 10px;
+    padding: none; } }
 
 @media screen and (max-width: 450px) {
   .hero .titulo {

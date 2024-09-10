@@ -10,32 +10,25 @@
     flex-direction: column;
     @include flex(flex, center, center);
     .titulo {
-        background-color: #0000008c;
         text-align: center;
-        font-size: 40px;
-        color: #ffffff;
+        font-size: 45px;
+        color: $color-secundario;
         margin: 25px;
         display: inline-block;
+        text-shadow: $color-principal 0 3px;
         text-transform: uppercase;
-
-        &:hover {
-            background-color: #000000d2;
-        }
     }
 
     p {
-        font-size: 25px;
+        font-size: 35px;
         width: 50%;
         text-align: center;
-        color: $color-terciario;
-        background-color: #0000008c;
+        color: $color-secundario;
         text-decoration: none;
         margin: 25px;
         margin-bottom: 30px;
-
-        &:hover {
-            background-color: #000000d2;
-        }
+        text-shadow: $color-principal 0 3px;
+        text-transform: uppercase;
     }
 
     a {
@@ -93,8 +86,7 @@
     img {
         height: 450px;
         width: 700px;
-        -webkit-box-shadow: 2px -1px 15px 10px #ff35ca;
-        box-shadow: 2px -1px 15px 10px #ff35ca;
+        @include bordes(2px, solid, $color-principal);
     }
 }
 
