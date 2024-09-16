@@ -185,11 +185,13 @@
     /*!mediaQ Cursos*/
     .compra-cursos {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     /*!mediaQ Blog*/
     .guias {
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -255,6 +257,9 @@
     .familia .flia-img {
         height: 240px;
         width: 250px;
+    }
+    .pages{
+        display: none;
     }
 }
 
@@ -434,13 +439,13 @@
 
     .footer h3 {
         font-size: 25px;
-        color: #ffffff;
+        color: $color-terciario;
         margin-top: 15px;
     }
 
     .footer a img {
         height: 20px;
-        width: 33px;
+        width: 34px;
         margin-top: 15px;
     }
 
@@ -496,7 +501,7 @@
 
     .footer h3 {
         font-size: 15px;
-        color: #ffffff;
+        color: $color-terciario;
         margin-top: 15px;
     }
 
@@ -506,7 +511,8 @@
     }
 
     .footer div a img {
-        width: 22%;
+        height: 25px;
+        width: 25px;
         margin-top: 15px;
     }
 

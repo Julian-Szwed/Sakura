@@ -1,6 +1,6 @@
 /*? PAGINA DE CONTACTO */
 .contacto{
-    color: #ffffff;
+    color: $color-terciario;
     background-image: url(../img/fondonav.jpeg);
     margin-top: 5px;
     text-transform: uppercase;
@@ -10,28 +10,32 @@ form{
     margin: auto;
     margin-top: 25px;
     width: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    border: 2px solid #ff35ca;
+    @include bordes(2px, solid, $color-secundario);
     padding: 15px;
     background-image: url(../img/fondonav.jpeg);
     background-size: cover;
     border-radius: 35px;
     div{
+        margin: 12px;
         button{
-            background-color: #000;
-            color: #ffffff;
+            background-color: $color-principal;
+            color: $color-terciario;
             margin-top: 10px;
-            padding: 12px;
+            padding: 10px;
             font-size: 16px;
-            border: 2px solid #ff35ca;
-            border-radius: 35px;
+            @include bordes(2px, solid, $color-secundario);
+            border-radius: 15px;
             text-transform: uppercase;
             &:hover{
-                background-color: #ff35ca;
-                color: #000;
+                background-color: $color-secundario;
+                color: $color-principal;
+                border-color: $color-principal;
+                transition: 0.5s;
             }
         }
     }

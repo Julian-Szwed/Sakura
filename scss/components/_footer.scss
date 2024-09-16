@@ -14,7 +14,7 @@
     }
     h3{
         font-size: 30px;
-        color: #ffffff;
+        color: $color-terciario;
         margin-top: 15px;
     }
     div{
@@ -22,6 +22,7 @@
             img{
                 height: 40px;
                 margin-top: 15px;
+                padding: 3px;
                 &:hover{
                     transition: 1s;
                     transform: scale(1.5);

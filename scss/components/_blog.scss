@@ -12,7 +12,7 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #000000;
+    background-color: $color-principal;
     text-align: center;
     @include bordes(2px, solid, $color-secundario);
     .tutos-guias{
@@ -31,9 +31,7 @@
 
 }
 .guias{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     .guias-descargables {
         background-color: $color-terciario;
         border: 2px solid $color-secundario;
@@ -58,10 +56,12 @@
             h3{
                 font-size: 22px;
                 padding: 5px;
-                margin-top: -5px;
+                margin: 10px;
             }
             p{
                 font-size: 13px;
+                text-align: start;
+                margin: 2px;
             }
             .boton-tutos{
                 background-color: $color-secundario;
