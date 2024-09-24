@@ -28,16 +28,19 @@
         object-fit: cover;
         }
         .cursos-pagos-guias {
-            padding: 2px;
+            padding: 1px;
             flex-grow: 1;
             flex-direction: column;
             @include flex(flex, space-between, center);
             h3{
-                font-size: 22px;
-                padding: 5px;
+                font-size: 18px;
+                text-align: center;
+                margin-top: 8px;
             }
             p{
-                font-size: 14.5px;
+                font-size: 12px;
+                text-align: center;
+                margin: 2px;
             }
             .boton-cursos{
                 background-color: $color-principal;

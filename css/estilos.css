@@ -141,13 +141,13 @@ div.col-md-6 {
     width: auto;
     padding: 2px;
     position: relative; }
-    .pages div img {
+    .pages div a img {
       height: 60%;
       width: 100%;
-      object-fit: contain;
+      object-fit: none;
       background-color: #000000;
       border-radius: 50%; }
-      .pages div img:hover {
+      .pages div a img:hover {
         transition: 0.5s;
         transform: scale(1.05);
         -webkit-box-shadow: 1px 4px 42px 5px #ff35ca;
@@ -303,12 +303,12 @@ div.col-md-6 {
       justify-content: space-between;
       align-items: center; }
       .guias .guias-descargables .tutos h3 {
-        font-size: 22px;
-        padding: 5px;
-        margin: 10px; }
+        font-size: 18px;
+        text-align: center;
+        margin-top: 8px; }
       .guias .guias-descargables .tutos p {
-        font-size: 13px;
-        text-align: start;
+        font-size: 12px;
+        text-align: center;
         margin: 2px; }
       .guias .guias-descargables .tutos .boton-tutos {
         background-color: #ff35ca;
@@ -394,17 +394,20 @@ form {
       height: 240px;
       object-fit: cover; }
     .compra-cursos .cursos-pagos .cursos-pagos-guias {
-      padding: 2px;
+      padding: 1px;
       flex-grow: 1;
       flex-direction: column;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
-        font-size: 22px;
-        padding: 5px; }
+        font-size: 18px;
+        text-align: center;
+        margin-top: 8px; }
       .compra-cursos .cursos-pagos .cursos-pagos-guias p {
-        font-size: 14.5px; }
+        font-size: 12px;
+        text-align: center;
+        margin: 2px; }
       .compra-cursos .cursos-pagos .cursos-pagos-guias .boton-cursos {
         background-color: #000000;
         color: #ffffff;
@@ -679,7 +682,12 @@ article {
     padding: 2px; }
   .info-tutos-guias .tutos-guias .tutos-guias-parrafo {
     font-size: 12px;
-    padding: 5px; } }
+    padding: 5px; }
+  /*MEDIAQ TIENDA*/
+  article div h3 {
+    font-size: 20px; }
+  article div p {
+    font-size: 9px; } }
 
 @media screen and (max-width: 882px) {
   .bienvenidos img {
@@ -703,6 +711,8 @@ article {
     height: 300px; }
   article div {
     width: 600px; }
+  .pages div {
+    height: 200px; }
   /*!mediaQ Cursos*/
   .compra-cursos {
     flex-wrap: wrap;
@@ -747,9 +757,7 @@ article {
     font-size: 12px; }
   .familia .flia-img {
     height: 240px;
-    width: 250px; }
-  .pages {
-    display: none; } }
+    width: 250px; } }
 
 @media screen and (max-width: 730px) {
   .bienvenidos img {
@@ -797,6 +805,10 @@ article {
   article div a {
     font-size: 10px;
     width: 130px; }
+  .pages div {
+    height: 170px; }
+  .pages div h4 {
+    font-size: 15px; }
   /*MEDIAQ BIO*/
   .biografia {
     grid-template-columns: repeat(1, 1fr);
@@ -858,6 +870,10 @@ article {
     width: 90px; }
   article div h3 {
     font-size: 10px; }
+  .pages div {
+    height: 150px; }
+  .pages div h4 {
+    font-size: 13px; }
   .footer h3 {
     font-size: 25px;
     color: #ffffff;
@@ -915,6 +931,11 @@ article {
     width: 75px; }
   article div h3 {
     font-size: 8px; }
+  .pages div {
+    margin-top: -25px;
+    height: 120px; }
+  .pages div h4 {
+    font-size: 11px; }
   /*mediaQ Cursos*/
   .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
     font-size: 17px; }

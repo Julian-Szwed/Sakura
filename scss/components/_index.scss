@@ -9,6 +9,7 @@
     background-attachment: fixed;
     flex-direction: column;
     @include flex(flex, center, center);
+
     .titulo {
         text-align: center;
         font-size: 45px;
@@ -75,7 +76,8 @@
             text-align: center;
             padding: 10px;
             text-transform: uppercase;
-            a{
+
+            a {
                 text-decoration: underline;
                 list-style: none;
                 color: $color-secundario;
@@ -89,30 +91,38 @@
         @include bordes(2px, solid, $color-principal);
     }
 }
+
 /* PAGES */
-.pages{
+.pages {
     @include flex(flex, space-around, center);
     padding: 2px;
     margin-top: 60px;
-    div{
+
+    div {
         height: 270px;
         width: auto;
         padding: 2px;
         position: relative;
-        img{
-            height: 60%;
-            width: 100%;
-            object-fit: contain;
-            background-color: $color-principal;
-            border-radius: 50%;
-            &:hover {
-                transition: 0.5s;
-                transform: scale(1.05);
-                -webkit-box-shadow: 1px 4px 42px 5px $color-secundario;
-                box-shadow: 1px 4px 42px 5px $color-secundario;
+
+        a {
+            
+            img {
+                height: 60%;
+                width: 100%;
+                object-fit: none;
+                background-color: $color-principal;
+                border-radius: 50%;
+
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.05);
+                    -webkit-box-shadow: 1px 4px 42px 5px $color-secundario;
+                    box-shadow: 1px 4px 42px 5px $color-secundario;
+                }
             }
         }
-        h4{
+
+        h4 {
             margin-top: 7px;
             color: $color-secundario;
             text-align: center;
@@ -121,6 +131,7 @@
         }
     }
 }
+
 /*! TARJETAS - PRODUCTOS */
 .populares {
     h3 {
@@ -175,6 +186,7 @@
                 padding: 7px;
                 border-radius: 10px;
                 @extend %links;
+
                 &:hover {
                     background-color: $color-secundario;
                     color: $color-principal;
@@ -183,6 +195,7 @@
         }
     }
 }
+
 /*! BANCO DE IMAGENES */
 .titulo-productos {
     h2 {

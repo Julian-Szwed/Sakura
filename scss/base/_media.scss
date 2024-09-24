@@ -140,6 +140,13 @@
         font-size: 12px;
         padding: 5px;
     }
+    /*MEDIAQ TIENDA*/
+    article div h3{
+        font-size: 20px;
+    }
+    article div p{
+        font-size: 9px;
+    }
 }
 
 @media screen and (max-width: 882px) {
@@ -181,7 +188,9 @@
     article div {
         width: 600px;
     }
-
+    .pages div {
+        height: 200px;
+    }
     /*!mediaQ Cursos*/
     .compra-cursos {
         flex-wrap: wrap;
@@ -257,9 +266,6 @@
     .familia .flia-img {
         height: 240px;
         width: 250px;
-    }
-    .pages{
-        display: none;
     }
 }
 
@@ -343,6 +349,12 @@
     article div a {
         font-size: 10px;
         width: 130px;
+    }
+    .pages div {
+        height: 170px;
+    }
+    .pages div h4{
+        font-size: 15px;
     }
 
     /*MEDIAQ BIO*/
@@ -436,6 +448,12 @@
     article div h3 {
         font-size: 10px;
     }
+    .pages div {
+        height: 150px;
+    }
+    .pages div h4{
+        font-size: 13px;
+    }
 
     .footer h3 {
         font-size: 25px;
@@ -528,7 +546,13 @@
     article div h3 {
         font-size: 8px;
     }
-
+    .pages div {
+        margin-top: -25px;
+        height: 120px;
+    }
+    .pages div h4{
+        font-size: 11px;
+    }
     /*mediaQ Cursos*/
     .compra-cursos .cursos-pagos .cursos-pagos-guias h3 {
         font-size: 17px;
